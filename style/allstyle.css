@@ -1,0 +1,397 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/* container :start */
+
+.container {
+  height: 100%;
+  /* width: 200vh; */
+}
+@media (max-width: 328px) {
+  .container {
+    width: 100vh;
+  }
+}
+/* / .top-container start */
+
+.top-container {
+  background-image: url(../background_images/backgo=round\ main.png);
+}
+
+/* / .top-container-header-start */
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 11px 9px 6px;
+  align-items: center;
+}
+
+.logo-img {
+  height: 5rem;
+}
+
+/* social media top  */
+.social-media {
+  display: flex;
+  height: 1rem;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 17px;
+  background-color: #03a9b6;
+  padding: 16px 11px 15px 24px;
+  border-radius: 5px;
+}
+
+.social-media a {
+  color: white;
+}
+
+/* .social-media img {
+      height: 1rem;
+      background-color: #03A9B6;
+  } */
+
+.call {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* social media :end */
+
+/* header responsive start */
+
+@media (max-width: 552px) {
+  .logo-img {
+    height: 3.5rem;
+  }
+
+  .social-media img {
+    height: 0.7rem;
+  }
+
+  .social-media {
+    height: 0.5rem;
+    gap: 5px;
+    padding: 12px 8px 11px 20px;
+  }
+
+  .call {
+    gap: 5px;
+  }
+}
+
+@media (max-width: 400px) {
+  .logo-img {
+    height: 2.5rem;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+}
+
+/* header responsive :end */
+
+/* navbar :start */
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  justify-content: center;
+  gap: 30px;
+  background-color: #03a9b6;
+  overflow: hidden;
+}
+
+.navbar a,
+.navbar button {
+  padding: 20px 54px;
+  color: white;
+  font-size: 1.3rem;
+  transition-duration: 500ms;
+}
+
+.hambureger-btn {
+  /* margin: 20px; */
+  /* height: 1rem; */
+  display: none;
+}
+
+.hamburger-btn-img {
+  height: 1.5rem;
+}
+
+/* .navbar :end */
+
+/* .dropdown css strart */
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 1.3rem;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 19px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #fecd1a;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #03a9b6;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #03a9b6;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Dropdown css end  */
+
+.navbar a:hover,
+.navbar button:hover {
+  background-color: #fecd1a;
+  box-shadow: 5px 5px 5px #fecd1a;
+  border-radius: 10px;
+}
+
+/* .navbar responsive-start */
+@media (max-width: 878px) {
+  .navbar a,
+  .dropdown {
+    display: none;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+@media (max-width: 878px) {
+  .hambureger-btn {
+    display: block;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .navbar {
+    justify-content: right;
+  }
+
+  .dropdown .dropbtn {
+    padding: 19px 60px;
+  }
+}
+
+/* footer styling :start */
+.footer-parent {
+  margin-top: 50px;
+}
+
+.footer-above-img {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* padding-right: 113px; */
+  margin-top: 0.4px;
+  padding-left: 100px;
+  box-shadow: 0px -10px 5px -5px #888;
+}
+
+.footer-left,
+.footer-right {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  width: 100%;
+  padding: 17px 0;
+}
+
+.footer-left img {
+  height: 5rem;
+  width: 16rem;
+}
+
+.footer-left span {
+  font-size: 1.2em;
+  max-width: 95%;
+}
+
+.footer-middle-services {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer-middle-services div {
+  display: flex;
+  gap: 1rem;
+}
+.footer-middle-services div .fa-solid {
+  color: #03a9b6;
+}
+.footer-middle-services div a {
+  color: black;
+  font-size: 1.2rem;
+}
+.footer-middle {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 15px;
+  margin-left: 55px;
+}
+.footer-middle h2 {
+  color: #03a9b6;
+}
+
+/* .footer-right {
+      display: flex;
+      flex-direction: column;
+      /* align-items: center; */
+/* padding-top: 20px; */
+/* gap: 15px; */
+/* max-width: 30%;*/
+
+.footer-right h2 {
+  font-size: 1.5rem;
+  color: #03a9b6;
+  margin-bottom: 10px;
+  /* margin: 0 auto; */
+}
+
+/* .footer-right-div { */
+/* margin: 0 32%; */
+/* } */
+
+.footer-right-divs {
+  display: flex;
+}
+
+.footer-right-div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-right-div div {
+  display: flex;
+  gap: 1rem;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.footer-right-div-location .fa-location-pin {
+  height: 16px;
+  width: 16px;
+}
+
+.footer-right-div div p {
+  font-size: 1.2em;
+}
+
+@media (max-width: 942px) {
+  .footer-container {
+    grid-template-columns: repeat(1, 1fr);
+    padding-left: 0;
+    gap: 50px;
+  }
+
+  .footer-divs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-middle {
+    margin-left: 0;
+  }
+
+  .footer-left span {
+    font-size: 1.2em;
+    max-width: 95%;
+    text-align: center;
+  }
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: #03a9b6;
+  margin-top: 30px;
+}
+
+.copyright span {
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 711px) {
+  .copyright span {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 583px) {
+  .copyright span {
+    font-size: 1rem;
+  }
+}

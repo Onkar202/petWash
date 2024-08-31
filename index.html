@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet Wash</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="style/allstyle.css">
+    <!-- /* 03A9B6 */ -->
+  
+</head>
+
+<body>
+    <div class="container">
+        <div class="top-container">
+            <div class="header">
+                <a href="#">
+                    <img class="logo-img" src="logo_images/logo.webp" alt="logo-img" />
+                </a>
+
+                <div class="social-media">
+                    <a href="#call" class="call">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+9123453421</span>
+                    </a>
+                    <a href="#">
+                        <!-- <img src="social_media/FBLOGO.jpeg" alt="facebppk"> -->
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#"> <i class="fa-brands fa-whatsapp"></i> </a>
+                    <a href="#"> <i class="fa-brands fa-linkedin"></i> </a>
+                </div>
+            </div>
+
+            <nav class="navbar">
+                <a href="index.html" class="navDisplay">Home</a>
+                <a href="aboutus.html" class="navDisplay">About us</a>
+                <div class="dropdown navDisplay">
+                    <button class="dropbtn">Service
+                        <!-- <i class="fa fa-caret-down"></i> -->
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="consulant.html">Consulant</a>
+                        <a href="service.php">Book a Service</a>
+                        <!-- <a href="#">Link 3</a> -->
+                    </div>
+                </div>
+
+                <a href="contact.php" class="navDisplay">Contact us</a>
+               
+                <div class="dropdown navDisplay">
+                    <button class="dropbtn">Pet Shop
+                        <!-- <i class="fa fa-caret-down"></i> -->
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="Other info/dog_shop/DOG_SHOP_PAGE.HTML">Dogs</a>
+                        <a href="Other info/cat_shop/CAT_SHOP_PAGE.HTML">Cats</a>
+                        <a href="Other info/bird_shop/BIRD_SHOP_PAGE.html">Birds</a>
+                        <a href="buypets.php">Buy pets</a>
+                        <!-- <a href="#">Link 3</a> -->
+                    </div>
+                </div>
+
+                <a href="Other info/docter/doctor.html" class="navDisplay">Docters</a>
+                <a href="admin/dashboard.php" class="navDisplay">Admin</a>
+
+                <button class="hambureger-btn">
+                    <img src="hamburger.png" alt="" class="hamburger-btn-img" onclick="show_hide()" />
+                </button>
+            </nav>
+
+            <div class="top-footer">
+                <div class="top-footer-left">
+                    <div class="top-footer-left-h1">
+                        <h1>We Style Your pet</h1>
+                    </div>
+                    <div class="top-footer-left-p">
+                        <p>
+                            “Transforming tails with tender care, our grooming makes your
+                            furry friends shine and wag with delight.”
+                        </p>
+                    </div>
+                </div>
+                <div class="top-footer-right">
+                    <img src="Homepage_img/cat with dog.png" alt="" />
+                </div>
+            </div>
+        </div>
+
+        <div class="our-story">
+            <div class="our-story-left">
+                <h1>Our Story</h1>
+                <div class="our-story-text">
+                    <p>
+                        We have been grooming for many years now and we love every part of
+                        our job! We provide a very warm and friendly environment for your
+                        pets. Our professional team made sure your pet always gets the
+                        highest level of care, because we treat all pets as if they were
+                        our own!
+                    </p>
+                </div>
+                <div class="reques-a-call">
+                    <a href="#">
+                        <button>Request a Call</button>
+                    </a>
+                    <p>or Call Us +918446019489</p>
+                </div>
+            </div>
+            <div class="our-story-right">
+                <img src="Homepage_img/dog1.webp" alt="" />
+            </div>
+        </div>
+
+        <div class="groomers">
+            <div class="groomers-info">
+                <div class="upper-groomers">
+                    <div class="scrisor icons">
+                        <i class="fa-solid fa-scissors"></i>
+                    </div>
+                    <div class="icons-left">
+                        <h2>Top groomers</h2>
+                        <p>Our professional team provide exceptional grooming service.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="groomers-info">
+                <div class="upper-groomers">
+                    <div class="medal icons">
+                        <i class="fa-solid fa-medal"></i>
+                    </div>
+                    <div class="icons-left">
+                        <h2>V.I.P. Service</h2>
+                        <p>
+                            We take pride in giving you and your pet personalized attention.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="groomers-info">
+                <div class="upper-groomers">
+                    <div class="paw icons">
+                        <i class="fa-solid fa-paw"></i>
+                    </div>
+                    <div class="icons-left">
+                        <h2>Top groomers</h2>
+                        <p>Our professional team provide exceptional grooming service.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="our-services">
+            <div class="our-services-title">
+                <h1>Our Services</h1>
+            </div>
+
+            <div class="our-services-conainer">
+                <div class="our-services-left os">
+                    <div class="upper-l">
+                        <div class="l">
+                            <div class="l1">
+                                <h2>Pet Grooming</h2>
+                                <p>" Pet grooming, maximizing charm and well-being."</p>
+                            </div>
+
+                            <div class="l2">
+                                <i class="fa-solid fa-scissors"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upper-l">
+                        <div class="l">
+                            <div class="l1">
+                                <h2>Dog Training</h2>
+                                <p>"Better-trained dogs create a happier company."</p>
+                            </div>
+                            <div class="l2">
+                                <i class="fa-solid fa-dog"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upper-l">
+                        <div class="l">
+                            <div class="l1">
+                                <h2>Pet Relocation</h2>
+                                <p>"Stress-free pet relocation for a smooth journey."</p>
+                            </div>
+                            <div class="l2">
+                                <i class="fa-solid fa-van-shuttle"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="our-services-middle os">
+                    <img src="Homepage_img/dog2.webp" alt="" />
+                </div>
+                <div class="our-services-right os">
+                    <div class="upper-l">
+                        <div class="l">
+                            <!-- our services right first two icons are images not icons -->
+                            <div class="l2">
+                                <img src="Icons/dog-petting.png" alt="" class="os-left-icon" />
+                            </div>
+                            <div class="l1">
+                                <h2>Consult a Vet</h2>
+                                <p>Consult a vet for your pet's health, and your pet's companionship.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upper-l">
+                        <div class="l">
+                            <div class="l2">
+                                <img src="Icons/dog-training.png" alt="" class="os-left-icon" />
+                            </div>
+                            <div class="l1">
+                                <h2>Dog Walking</h2>
+                                <p>Our professional team provide exceptional grooming service.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upper-l">
+                        <div class="l">
+                            <div class="l2">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                            <div class="l1">
+                                <h2>Pet Insurance</h2>
+                                <p>Our professional team provide exceptional grooming service.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="customers-feedback">
+            <div class="cs-feedback-divs"></div>
+            <div class="cs-feedback-divs"></div>
+        </div>
+
+        <div class="footer-parent">
+            <div class="footer-above-img">
+                <img src="Homepage_img/pets watching.jpeg" alt="">
+            </div>
+            <div class="footer-container">
+                <div class="footer-divs footer-left">
+                    <img src="logo_images/logo.webp" alt="" />
+
+                    <span>Welcome to I Luxury Pet Wash, where we believe that every pet
+                        deserves to look and feel their best.
+                    </span>
+                </div>
+                <div class="footer-divs footer-middle">
+                    <h2>Our Services</h2>
+
+                    <div class="footer-middle-services">
+                        <div>
+                            <i class="fa-solid fa-arrow-right"></i>
+                            <a href="service.php">pet Grooming</a>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-arrow-right"></i>
+                            <a href="service.php">pet Training</a>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-arrow-right"></i>
+                            <a href="service.php">pet Relocation</a>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-arrow-right"></i>
+                            <a href="service.php">pet Insurance</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-divs footer-right">
+                    <h2>Contact Info</h2>
+                    <div class="footer-right-div">
+                        <div>
+                            <i class="fa-regular fa-envelope"></i>
+                            <p>123@gmail.com</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-phone"></i>
+                            <p>+912345678543</p>
+                        </div>
+                        <div class="footer-right-div-location">
+                            <i class="fa-solid fa-location-pin"></i>
+                            <p>Kolhapur</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <span>Copyright © 2023 I Luxury Pet Wash All rights Reserved Onkar Kumbhar</span>
+            </div>
+        </div>
+
+    </div>
+
+    
+       
+   <script src="script.js"></script>
+</body>
+
+</html>

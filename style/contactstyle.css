@@ -1,0 +1,172 @@
+
+
+
+  /* navbar responsive :end */
+
+.map-container {
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+iframe {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contact-form {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+}
+
+.left-form,
+.right-form {
+    width: 50%;
+}
+
+form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 20px;
+}
+
+.right-form {
+    margin: 0 auto;
+    display: flex;
+}
+
+form h1 {
+    font-size: 3rem;
+}
+
+form input {
+    border-radius: 20px;
+    height: 40px;
+    padding: 10px;
+}
+
+form .btn {
+    border-radius: 20px;
+    height: 50px;
+    padding: 10px;
+    width: 200px;
+    margin: 0 auto;
+    background-color: #03a9b6;
+    font-size: 1.5rem;
+    color: white;
+    border: 0;
+    cursor: pointer;
+}
+
+form .btn:hover{
+    background-color: #fecd1a;
+}
+
+textarea {
+    border-radius: 10px;
+    padding: 10px;
+    height: 170px;
+    border-radius: 20px;
+    font-size: 1.5rem;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.contact-info h1 {
+    font-size: 3rem;
+}
+
+.icon {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.icon i {
+    transform: scale(2.5);
+    color: #fecd1a;
+}
+
+.icon span {
+    font-size: 2rem;
+}
+
+.img img {
+    height: 300px;
+}
+
+
+@media (max-width:1228px) {
+    .contact-form {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+}
+
+@media (max-width:928px) {
+    .contact-form {
+        align-items: start;
+    }
+
+    .left-form {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .right-form {
+        width: 100%;
+        margin: 0;
+        justify-content: center;
+    }
+}
+
+@media (max-width:620px) {
+    .right-form {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .contact-info {
+        /* align-items: center; */
+        margin: 0 auto;
+        gap: 30px;
+    }
+
+
+    form h1,
+    .contact-info h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .icon span {
+        font-size: 1.8rem;
+    }
+
+    .icon i {
+        transform: scale(1.5);
+        color: #fecd1a;
+    }
+}
+
+       /* footer style */
+       /* form .success,form .not_success{
+        background-color: #fecd1a;
+        border: 0;
+        border-radius: 20px;
+        font-size: 1.2rem;
+        color: white;
+        display: none;
+        
+    } */
+

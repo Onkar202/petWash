@@ -1,0 +1,96 @@
+
+h1{
+    margin-top: 100px;
+    text-align: center;
+    margin: 50px;
+}
+.middle{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+form{
+display: flex;
+flex-direction: column;
+gap: 10px;
+align-items: center;
+background-color: #fecd1a;
+padding: 100px;
+}
+.img img{
+height: 300px;
+}
+.img1,.img2{
+display: flex;
+flex-direction: column;
+gap: 20px;
+border: 1px solid rgb(70, 68, 68);
+background-color: white;
+}
+
+.img,.col1,.col2{
+display: flex;
+gap: 100px;
+align-items: center;
+}
+.col1 .service select,.col2 input{
+    width: 300px;
+    height: 40px;
+    border: 1;
+    border-radius: 10px;
+}
+.cl-1 input{
+width: 700px;
+height: 40px;
+border-radius: 10px;
+}
+.cl-1 textarea {
+    width: 700px;
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: 10px;
+    height: 100px;
+}
+@media (max-width:730px) {
+form{
+    gap: 30px;
+    padding: 40px;
+}
+.img{
+    flex-direction: column;
+    gap: 10px;
+}
+.col1,.col2{
+    flex-direction: column;
+    gap: 20px;
+}
+.cl-1 input,.cl-1 textarea{
+    width: 302px;
+    font-size: 1.3rem;
+    
+}
+.img img {
+    height: 200px;
+}
+
+}
+
+.submit{
+margin-top: 20px;
+padding: 20px 50px;
+font-size: 1.5rem;
+border-radius: 20px;
+background-color: #03a9b6;
+color: white;
+cursor: pointer;
+}
+
+.submit:hover{
+background-color: #25d485;
+}
+h3{
+font-size: 1.5rem;
+}
+
+

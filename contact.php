@@ -22,7 +22,7 @@
                 <div class="social-media">
                     <a href="#call" class="call">
                         <i class="fa-solid fa-phone"></i>
-                        <span>+9123453421</span>
+                        <span>+91111111111</span>
                     </a>
                     <a href="#">
                         <i class="fa-brands fa-facebook"></i>
@@ -101,7 +101,7 @@
                     <h1>Contacts</h1>
                     <div class="icon">
                         <i class="fa-solid fa-phone"></i>
-                        <span>+9123453421</span>
+                        <span>+91111111111</span>
                     </div>
                     <div class="icon">
                         <i class="fa-regular fa-envelope"></i>
@@ -221,14 +221,14 @@ if(isset($_POST['send'])){
         $mail->isSMTP();                                            //Send using SMTP
         $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
         $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-        $mail->Username   = 'ronyk010201@gmail.com';                     //SMTP username
-        $mail->Password   = 'jvib ggwl mina ywuj';                               //SMTP password
+        $mail->Username   = 'your mail id';                     //SMTP username
+        $mail->Password   = 'your app password';                               //SMTP password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
         $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
         //Recipients
-        $mail->setFrom('ronyk010201@gmail.com', 'Shop');
-        $mail->addAddress('ronyk010201@gmail.com', 'User');     //Add a recipient
+        $mail->setFrom('your mail id', 'Shop');
+        $mail->addAddress('your mail id', 'User');     //Add a recipient
     
 
         //Content
@@ -246,13 +246,13 @@ if(isset($_POST['send'])){
         $maill->isSMTP();                                            //Send using SMTP
         $maill->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
         $maill->SMTPAuth   = true;                                   //Enable SMTP authentication
-        $maill->Username   = 'ronyk010201@gmail.com';                     //SMTP username
-        $maill->Password   = 'jvib ggwl mina ywuj';                               //SMTP password
+        $maill->Username   = 'your mail id';                     //SMTP username
+        $maill->Password   = 'your app password';                               //SMTP password
         $maill->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
         $maill->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
         //Recipients
-        $maill->setFrom('ronyk010201@gmail.com', 'Admin');
+        $maill->setFrom('your mail id', 'Admin');
         $maill->addAddress($email, 'User');     //Add a recipient
     
 

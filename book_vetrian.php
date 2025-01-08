@@ -233,14 +233,14 @@ if($appoinment_date < $last_appoinment_date && !($last_appoinment_time >= $t1 &&
         $mail->isSMTP();                                            //Send using SMTP
         $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
         $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-        $mail->Username   = 'ronyk010201@gmail.com';                     //SMTP username
-        $mail->Password   = 'jvib ggwl mina ywuj';                               //SMTP password
+        $mail->Username   = 'your mail id';                     //SMTP username
+        $mail->Password   = 'your app password';                               //SMTP password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
         $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
         //Recipients
-        $mail->setFrom('ronyk010201@gmail.com', 'Shop');
-        $mail->addAddress('ronyk010201@gmail.com', 'User');     //Add a recipient
+        $mail->setFrom('your mail id', 'Shop');
+        $mail->addAddress('your mail id', 'User');     //Add a recipient
     
 
         //Content
@@ -260,13 +260,13 @@ if($appoinment_date < $last_appoinment_date && !($last_appoinment_time >= $t1 &&
         $maill->isSMTP();                                            //Send using SMTP
         $maill->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
         $maill->SMTPAuth   = true;                                   //Enable SMTP authentication
-        $maill->Username   = 'ronyk010201@gmail.com';                     //SMTP username
-        $maill->Password   = 'jvib ggwl mina ywuj';                               //SMTP password
+        $maill->Username   = 'your mail id';                     //SMTP username
+        $maill->Password   = 'your app password';                               //SMTP password
         $maill->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
         $maill->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
         //Recipients
-        $maill->setFrom('ronyk010201@gmail.com', 'Admin');
+        $maill->setFrom('your mail id', 'Admin');
         $maill->addAddress($email, 'User');     //Add a recipient
     
 
